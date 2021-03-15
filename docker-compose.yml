@@ -8,6 +8,8 @@ services:
             POSTGRES_USER: pgsql
             POSTGRES_PASSWORD: pgsql
             POSTGRES_DB: 'control_db'
+            POSTGRES_ROOT_USER: pgsql
+            POSTGRES_ROOT_PASSWORD: pgsql
         volumes:
             - control_db:/data/postgres
             - ./init.sql:/docker-entrypoint-initdb.d/init.sql

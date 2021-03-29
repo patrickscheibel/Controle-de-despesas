@@ -15,8 +15,8 @@ final class MigrationInicial extends AbstractMigration
         );
 
         $this->table('category')
-        ->addColumn('name', 'string', array('limit' => 255, 'null' => true))
-        ->addColumn('about', 'string', array('limit' => 255, 'null' => false))
+        ->addColumn('name', 'string', array('limit' => 255, 'null' => false))
+        ->addColumn('about', 'string', array('limit' => 255, 'null' => true))
         ->insert($categories)
         ->save();
 
@@ -28,8 +28,8 @@ final class MigrationInicial extends AbstractMigration
         );
 
         $this->table('login')
-        ->addColumn('username', 'string', array('limit' => 255, 'null' => true))
-        ->addColumn('password', 'string', array('limit' => 255, 'null' => true))
+        ->addColumn('username', 'string', array('limit' => 255, 'null' => false))
+        ->addColumn('password', 'string', array('limit' => 255, 'null' => false))
         ->insert($login)
         ->save();
 

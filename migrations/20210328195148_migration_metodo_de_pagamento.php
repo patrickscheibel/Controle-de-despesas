@@ -15,8 +15,8 @@ final class MigrationMetodoDePagamento extends AbstractMigration
         );
 
         $this->table('payment_method')
-        ->addColumn('name', 'string', array('limit' => 255, 'null' => true))
-        ->addColumn('about', 'string', array('limit' => 255, 'null' => false))
+        ->addColumn('name', 'string', array('limit' => 255, 'null' => false))
+        ->addColumn('about', 'string', array('limit' => 255, 'null' => true))
         ->insert($payment_method)
         ->save();
 

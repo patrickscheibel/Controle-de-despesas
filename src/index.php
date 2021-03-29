@@ -1,4 +1,4 @@
-<?php include 'database.php' ?>
+<?php include 'Conexao.php' ?>
 
 <html>
     <head>
